@@ -9,7 +9,7 @@ const DisabilityHelp = () => {
     return (
         <Navbar className='py-0' bg="light" variant="light" expand="sm">
             <Container fluid>
-                <Navbar.Brand className='mx-3' href="#">DCPCR</Navbar.Brand>
+                <Navbar.Brand className='mx-3 text-lg hover:text-base md-sm' href="#">DCPCR</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     {/*This totally empty navbar with the class 'me-auto' is significant. */}
@@ -28,8 +28,8 @@ const DisabilityHelp = () => {
 
                         </NavDropdown>
 
-                        <Nav.Link href="#action3">Screen Reader Access</Nav.Link>
-                        <Nav.Link href="#action4"><MdOutlineFormatSize />Font Size</Nav.Link>
+                        <Nav.Link href="#action3" className='my-auto'>Screen Reader Access</Nav.Link>
+                        <Nav.Link href="#action4" className='my-auto'><MdOutlineFormatSize />Font Size</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container >
