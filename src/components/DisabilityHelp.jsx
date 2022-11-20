@@ -4,12 +4,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import imgTranslate from '../images/Vector.png';
 import { MdOutlineFormatSize } from 'react-icons/md';
+import { LinkContainer } from 'react-router-bootstrap'
 
 const DisabilityHelp = () => {
     return (
         <Navbar className='py-0' bg="light" variant="light" expand="sm">
             <Container fluid>
-                <Navbar.Brand className='mx-3 text-lg hover:text-base md-sm' href="#">DCPCR</Navbar.Brand>
+                <LinkContainer to="/">
+                    <Navbar.Brand className='mx-3 text-lg hover:text-base md-sm'>DCPCR</Navbar.Brand>
+                </LinkContainer>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     {/*This totally empty navbar with the class 'me-auto' is significant. */}
@@ -29,7 +32,7 @@ const DisabilityHelp = () => {
                         </NavDropdown>
 
                         <Nav.Link href="#action3" className='my-auto'>Screen Reader Access</Nav.Link>
-                        <Nav.Link href="#action4" className='my-auto'><MdOutlineFormatSize />Font Size</Nav.Link>
+                        <Nav.Link href="#action4" className='mx-auto'><MdOutlineFormatSize />Font Size</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container >
