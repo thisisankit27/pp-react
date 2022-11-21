@@ -8,7 +8,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 function NavbarCustom() {
     return (
-        <Navbar bg="dark" variant="dark" expand="md">
+        <Navbar className='sticky-top' bg="dark" variant="dark" expand="md">
             <Container fluid>
                 <Navbar.Brand href="#"></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
