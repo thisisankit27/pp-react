@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import imgTranslate from '../images/Vector.png';
+import imgTranslate from '../../images/Vector.png';
 import { MdOutlineFormatSize } from 'react-icons/md';
 import { LinkContainer } from 'react-router-bootstrap'
 

@@ -1,12 +1,13 @@
-import DisabilityHelp from './components/DisabilityHelp'
+import DisabilityHelp from './components/TopNavbar/DisabilityHelp'
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import NavbarCustom from './components/navbar/NavbarCustom'
+import NavbarCustom from './components/Navbar/NavbarCustom'
 import HomeContent from './pages/HomeContent'
-import FindService from './pages/findService'
-import DisabilityInfo from './pages/disabilityInfo'
-import EssentialDoc from './pages/essentialDoc'
-import Resources from './pages/resources'
-import Footer from './components/Footer'
+import FindService from './pages/FindService'
+import DisabilityInfo from './pages/DisabilityNest/DisabilityInfo'
+import PhysicalDis from './pages/DisabilityNest/PhysicalDis';
+import EssentialDoc from './pages/EssentialDoc'
+import Resources from './pages/Resources'
+import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <>
@@ -19,7 +20,9 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<HomeContent />} />
           <Route exact path="/findService" element={<FindService />} />
-          <Route path='/disabilityInfo' element={<DisabilityInfo />} />
+          <Route path='/disabilityInfo' element={<DisabilityInfo />} >
+            <Route path='/disabilityInfo/physicalDis' element={<PhysicalDis />} />
+          </Route>
           <Route path='/essentialDoc' element={<EssentialDoc />} />
           <Route path='/resources' element={<Resources />} />
         </Routes>
