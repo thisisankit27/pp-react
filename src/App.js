@@ -23,8 +23,6 @@ const App = () => {
           <Route path='/essentialDoc' element={<EssentialDoc />} />
           <Route path='/resources' element={<Resources />} />
         </Routes>
-        {/* Content Page */}
-
         {/* Footer Section */}
         <Footer />
       </BrowserRouter>
