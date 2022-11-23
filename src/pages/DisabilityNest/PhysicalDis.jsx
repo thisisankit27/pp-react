@@ -1,9 +1,11 @@
-import { LinkContainer } from 'react-router-bootstrap'
-import Button from 'react-bootstrap/Button';
+import DisabilityButton from "./DisabilityButton";
 
 const physicalDis = () => {
     return (
-        <>
+        <div className='m-5'>
+            <div className='text-center'>
+                <DisabilityButton />
+            </div>
             <h2>Physical Disability</h2>
             <p>Under the overall ambit of Physical Disability, three types of disabilities are broadly classified:</p>
             <ol>
@@ -16,25 +18,8 @@ const physicalDis = () => {
                     <li><b>Acid attack victims</b></li>
                 </ul>
             </ol>
-            <LinkContainer to="/disabilityInfo/physicalDis">
-                <Button variant="secondary">Physical Disability</Button>
-            </LinkContainer>
-            <LinkContainer to="/disabilityInfo/intellectualDis">
-                <Button variant="secondary">Intellectual Disability</Button>
-            </LinkContainer>
-            <LinkContainer to="/disabilityInfo/mentalDis">
-                <Button variant="secondary">Mental Disability</Button>
-            </LinkContainer>
-            <LinkContainer to="/disabilityInfo/neurologicalDis">
-                <Button variant="secondary">Neurological</Button>
-            </LinkContainer>
-            <LinkContainer to="/disabilityInfo/bloodDis">
-                <Button variant="secondary">Blood Disorder</Button>
-            </LinkContainer>
-            <LinkContainer to="/disabilityInfo/multipleDis">
-                <Button variant="secondary">Multiple Disability</Button>
-            </LinkContainer>
-        </>
+
+        </div >
     );
 }
 
