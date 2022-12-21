@@ -1,6 +1,6 @@
 const resources = () => {
     return (
-        <div>
+        <div className="m-5">
             <h3>Important Resources</h3>
             <ol>
                 <li>Important notification or circular</li>
