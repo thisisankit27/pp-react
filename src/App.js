@@ -12,7 +12,7 @@ import BloodDis from './pages/DisabilityNest/BloodDis';
 import MultipleDis from './pages/DisabilityNest/MultipleDis';
 import EssentialDoc from './pages/EssentialDoc'
 import Resources from './pages/Resources'
-import Footer from './components/Footer/Footer'
+// import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <>
@@ -36,7 +36,7 @@ const App = () => {
           <Route path='/resources' element={<Resources />} />
         </Routes>
         {/* Footer Section */}
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

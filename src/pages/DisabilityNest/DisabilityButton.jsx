@@ -13,7 +13,6 @@ const DisabilityButton = () => {
             <LinkContainer className="m-4" to="/disabilityInfo/mentalDis">
                 <Button variant="secondary" xs={{ order: 1 }}>Mental Disability</Button>
             </LinkContainer>
-            <br></br>
             <LinkContainer className="m-4" to="/disabilityInfo/neurologicalDis">
                 <Button variant="secondary" xs>Neurological</Button>
             </LinkContainer>
