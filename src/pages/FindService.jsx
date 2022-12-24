@@ -1,6 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { LinkContainer } from 'react-router-bootstrap';
 
 function findService() {
     return (
@@ -42,6 +43,11 @@ function findService() {
                                 <option>Type-1</option>
                                 <option>Type-2</option>
                             </Form.Select>
+                            <Form.Text className="text-muted">
+                                <LinkContainer to="/findService/NearestClinics">
+                                    <Button variant='link'>Check the steps and nearest clinics. </Button>
+                                </LinkContainer>
+                            </Form.Text>
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Label>Disability percentage% (Optional)</Form.Label>
